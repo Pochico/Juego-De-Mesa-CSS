@@ -1,0 +1,161 @@
+﻿<html>	
+<head>
+	<!-- comentarios -->
+<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/tienda.css"/>
+<link rel="shortcut icon" href="images/logo.png" /> 
+ <title>Tales from the deep</title>
+<style>
+	
+</style> 
+</head>
+	<body>
+	<!-- La cabecera va por separado porque va a estar fija. -->
+	<a name="inicio"></a>
+	<div id="grande">
+		<header><a href="index.html"><img src="images/logo.png" id="paglogo" alt="Logo del juego de rol tales from the deep."/></a>
+		<ul class="nav">
+				<li><a href="tienda.html">Tienda</a></li>
+				<li><a href="entornos.html">Entornos</a></li>
+				<li><a href="#">Criaturas</a>
+					<ul>
+						<li><a href="neutrales.html">Neutrales</a></li>
+						<li><a href="hostiles.html">Hostiles</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Personajes</a>
+					<ul>
+						<li><a href="aliados.html">Aliados</a></li>
+						<li><a href="enemigos.html">Enemigos</a></li>
+					</ul>
+				</li>
+				<li><a href="historia.html">Historia</a></li>
+		</ul>
+		</header>
+		
+		<!-- fin cabecera -->
+		
+		
+		<div id="fondogaleria1">
+			
+			<form method="POST" action="thanks">
+				<div id="compra"><fieldset><legend>Encuentre su tienda.</legend>
+					<div id="sitio">
+					<h3><label for="provincia">Seleccione su provincia:</label></h3>
+					<select id="provincia">
+						<option value="1">Albacete</option>
+						<option value="2">Alicante</option>
+						<option value="3">Almería</option>
+						<option value="4">Álava</option>
+						<option value="5">Asturias</option>
+						<option value="6">Ávila</option>
+						<option value="7">Badajoz</option>
+						<option value="8">Balears, Illes</option>
+						<option value="9">Barcelona</option>
+						<option value="10">Bizkaia</option>
+						<option value="11">Burgos</option>
+						<option value="12">Cáceres</option>
+						<option value="13">Cádiz</option>
+						<option value="14">Cantabria</option>
+						<option value="15">Castellón/Castelló</option>
+						<option value="16">Ciudad Real</option>
+						<option value="17">Córdoba</option>
+						<option value="18">Coruña, A</option>
+						<option value="19">Cuenca</option>
+						<option value="20">Gipuzkoa</option>
+						<option value="21">Girona</option>
+						<option value="22">Granada</option>
+						<option value="23">Guadalajara</option>
+						<option value="24">Huelva</option>
+						<option value="25">Huesca</option>
+						<option value="26">Jaén</option>
+						<option value="27">León</option>
+						<option value="28">Lleida</option>
+						<option value="29">Lugo</option>
+						<option value="30">Madrid</option>
+						<option value="31">Málaga</option>
+						<option value="32">Murcia</option>
+						<option value="33">Navarra</option>
+						<option value="34">Ourense</option>
+						<option value="35">Palencia</option>
+						<option value="36">Palmas, Las</option>
+						<option value="37">Pontevedra</option>
+						<option value="38">Rioja, La</option>
+						<option value="39">Salamanca</option>
+						<option value="40">Santa Cruz de Tenerife</option>
+						<option value="41">Segovia</option>
+						<option value="42">Sevilla</option>
+						<option value="43">Soria</option>
+						<option value="44">Tarragona</option>
+						<option value="45">Teruel</option>
+						<option value="46">Toledo</option>
+						<option value="47">Valencia</option>
+						<option value="48">Valladolid</option>
+						<option value="49">Zamora</option>
+						<option value="50">Zaragoza</option>
+						<option value="51">Ceuta</option>
+						<option value="52">Melilla</option>
+					</select>
+					</div>
+					<div id="postaldiv">
+						<h3><label for="postal">Escriba su código postal:</label></h3>
+						<input id="postal" type="text" maxlength="5"/>
+					</div>
+					<div id="mapa"><h3>Seleccione su tienda en el mapa.</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.0953276557198!2d-3.7352441843984536!3d40.34023126821204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42275655c22103%3A0x548a9e723e1b1824!2sCentro+Comercial+Parquesur!5e0!3m2!1ses!2ses!4v1556547162827!5m2!1ses!2ses" width="350px" height="304px" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div></fieldset>
+			<form method="POST" action="thanks2">
+				<div id="opina"><fieldset><legend>Danos tu opinión.</legend>
+					<div class="tienes">
+						<h3>¿Has comprado el juego?</h3>
+						<input id="comprado" type="radio" name="comprado" value="s"/><label for="comprado">Sí</label>
+						<input id="nocomprado" type="radio" name="comprado" value="n"/><label for="nocomprado">No	</label>
+					</div>
+					<div class="tienes">
+						<h3>¿Te gusta?</h3>
+						<input id="gustado" type="radio" name="gustado" value="s"/><label for="gustado">Sí</label>
+						<input id="nogustado" type="radio" name="gustado" value="n"/><label for="nogustado">No	</label>
+					</div>
+					<div class="tienes">
+						<h3>¿Cuál es tu personaje favorito?</h3>
+						<input id="blackwall" type="radio" name="favor" value="b"/><label for="blackwall">Blackwall</label>
+						<input id="dorian" type="radio" name="favor" value="d"/><label for="dorian">Dorian</label>
+						<input id="alce" type="radio" name="favor" value="a"/><label for="alce">El Alce</label>
+						<input id="isabella" type="radio" name="favor" value="i"/><label for="isabella">Isabella</label>
+						<input id="roma" type="radio" name="favor" value="r"/><label for="roma">Roma y Gewska</label>
+						<input id="vacuo" type="radio" name="favor" value="v"/><label for="vacuo">El vácuo</label>
+					</div>
+					<div id="comentario">
+						<h3><label for="comen">Pon un comentario diciendo lo que opinas.</label></h3>
+						<textarea id="comen" cols="40" rows="8"></textarea>
+					</div>
+					
+			<!-- https://dabuttonfactory.com/#t=Enviar&f=Bellota-Bold&ts=24&tc=fff&tshs=1&tshc=000&w=200&h=50&c=5&bgt=gradient&bgc=e9e39a&ebgc=dfc132&it=png -->
+					
+					<input id="botonazo" type="image" src="images/button_enviar.png"/>
+					
+					
+				</div></fieldset>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</form>
+			
+		</div>
+		<a href="#inicio"><img src="images/arrow.png" id="arrow" class="fotos" alt="Flecha para subir."/></a>
+		<!-- pie -->
+		
+		<footer><h3>CardBoardFun</h3>
+		</footer>
+	</div>
+		<!-- fin pie -->
+	</body>	    
+</html>

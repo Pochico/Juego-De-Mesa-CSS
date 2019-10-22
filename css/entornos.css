@@ -1,0 +1,670 @@
+/* Elementos index -*/
+a[title^="Hosted"]{display: none;}
+
+
+#paglogo{
+float: left;
+width: 307px;
+}
+#paglogo:hover{
+	filter: contrast(130%) brightness(120%);
+}
+a{
+	cursor: url('../images/cursor.png') ,default;
+}
+body{
+	background-image: url('../images/body_background.png');
+	font-family: 'Charm', cursive;
+	cursor: url('../images/cursor1.png') ,default;
+	background-attachment: fixed;
+
+}
+#grande{
+	width: 1100px;
+	min-height: 700px;
+	margin: 0px auto;
+	background-color: ;	
+}
+ul{
+	list-style: none;
+	font-size: 30px;
+}
+ .nav,.nav ul{
+	 margin: 0px;
+	 padding: 0px;
+	font-family: ;
+	list-style: none;
+	line-height: 100px;
+}                      
+.nav > li{
+	float: right;
+}
+.nav li > ul{
+	display: none;
+}
+.nav li:hover > ul{
+display:block;
+}
+.nav li a{
+	display: block;
+	border-left: 1px solid wheat;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	background: #81050D;
+}
+.nav li a:hover{
+	background:#DF515A;
+	text-shadow: 0px 3px 7px black;
+}
+a{
+	text-decoration: none;
+	color: wheat;
+}
+header{
+	width: 1100px;
+	height: 100px;
+	background-color: indianred;
+	position: fixed;
+	top: 0px;
+	z-index: 3;
+}
+h2{
+	font-size: 30px;
+}
+footer{
+	margin-top: -50px;
+	width: 1100px;
+	height: 30px;
+	background: linear-gradient(to bottom, rgba(241,231,103,0.76) 0%, rgba(245,186,59,0.76) 39%, rgba(247,162,35,0.33) 60%, rgba(247,162,35,0.04) 74%);
+	text-align: center;
+}
+.separador{
+	height: 30px;
+	width: 1100px;
+	background-color: wheat;
+	background-image: url('../images/separacion.png');
+	background-position: center;
+	background-size: cover;
+}
+#arrow{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 80px;
+	height: 80px;
+	z-index: 3;
+}
+
+/*BOSQUE*/
+
+#bosque{
+	width: 1100px;
+	height: 700px;
+	margin-top: 100px;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, rgba(143,99,53,0.8) 0%, rgba(143,99,53,0.8) 26%, rgba(92,107,5,0.8) 70%, rgba(92,107,5,0.8) 100%);
+}
+#bosqueimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/bosque.jpg');
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-size: cover;
+	clip-path: circle(150px at right);
+	transition: all 1s;
+	z-index: 2;
+}
+#textobosque{
+	color: white;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	right: 40px;
+	top: -20px;
+	background: linear-gradient(to bottom, rgba(66,81,87,0.75) 0%, rgba(6,44,56,0.75) 22%, rgba(6,44,56,0.75) 77%, rgba(78,96,102,0.75) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px;
+}
+#bosqueimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#bosqueimagen:hover #textobosque{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	top: 20px;
+}
+
+/*MONTAÑA*/
+
+#montanaimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/montana.jpg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-size: cover;
+	clip-path: circle(150px at left);
+	transition: all 1s;
+	z-index: 2;
+}
+#textomontana{
+	color: white;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	left: 40px;
+	bottom: -20px;
+	background: linear-gradient(to bottom, rgba(69,87,66,0.75) 0%, rgba(35,54,6,0.75) 22%, rgba(10,54,6,0.75) 77%, rgba(78,102,79,0.75) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px;
+}
+#montanaimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#montanaimagen:hover #textomontana{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	bottom: 20px;
+}
+
+/*RÍO*/
+
+
+#rio{
+	width: 1100px;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, rgba(53,150,179,0.8) 0%, rgba(53,150,179,0.8) 26%, rgba(45,135,0,0.8) 70%, rgba(45,135,0,0.8) 100%);
+}
+#rioimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/rio.jpg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-size: cover;
+	clip-path: circle(150px at left);
+	transition: all 1s;
+	z-index: 2;
+}
+#textorio{
+	color: white;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	left: 50px;
+	bottom: -20px;
+	background: linear-gradient(to bottom, rgba(41,184,229,0.67) 0%, rgba(41,184,229,0.71) 22%, rgba(31,110,207,0.77) 63%, rgba(188,224,238,0.83) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px;
+}
+#rioimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#rioimagen:hover #textorio{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	bottom: 20px;
+}
+
+/*LLANURAS*/
+
+#llanura{
+	width: 1100px;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+}
+#llanuraimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/llanura.jpg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-size: cover;
+	clip-path: circle(150px at right);
+	transition: all 1s;
+	z-index: 2;
+}
+#textollanura{
+	color: black;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	right: 50px;
+	top: -20px;
+	background: linear-gradient(to bottom, rgba(243,226,199,0.92) 0%, rgba(105,74,28,0.91) 30%, rgba(182,141,76,0.9) 51%, rgba(233,212,179,0.88) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px;
+	text-shadow: 0px 2px 6px wheat;
+}
+#llanuraimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#llanuraimagen:hover #textollanura{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	top: 20px;
+}
+
+/*PANTANO*/
+
+#pantano{
+	width: 1100px;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, rgba(82,82,82,0.8) 0%, rgba(82,82,82,0.8) 30%, rgba(32,1,61,0.8) 83%, rgba(32,1,61,0.8) 100%);
+}
+#pantanoimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/pantano.jpg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-size: cover;
+	clip-path: circle(150px at left);
+	transition: all 1s;
+	z-index: 2;
+}
+#textopantano{
+	color: black;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	left: 0px;
+	bottom: 50px;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(179,179,179,0.94) 57%, rgba(89,89,89,0.89) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px;
+}
+#pantanoimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#pantanoimagen:hover #textopantano{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	left: 40px;
+}
+
+/*CUEVAS*/
+
+#cueva{
+	width: 1100px;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+}
+#cuevaimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/cueva.jpg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-size: cover;
+	clip-path: circle(150px at right);
+	transition: all 1s;
+	z-index: 2;
+}
+#textocueva{
+	color: white;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(2,69,7,0.51) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px; 
+}
+#cuevaimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#cuevaimagen:hover #textocueva{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	right: 50px;
+}
+
+/*CIUDADES*/
+
+
+#ciudad{
+	width: 1100px;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 30%, rgba(255,227,117,0.8) 83%, rgba(255,227,117,0.8) 100%);
+}
+#ciudadimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/ciudad.jpg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-position: center;
+	background-size: cover;
+	clip-path: circle(150px at left);
+	transition: all 1s;
+	z-index: 2;
+}
+#textociudad{
+	color: black;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	left: 90px;
+	bottom: 50px;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(179,179,179,0.94) 57%, rgba(89,89,89,0.89) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px;
+}
+#ciudadimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#ciudadimagen:hover #textociudad{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	left: 40px;
+}
+
+/*VILLAS*/
+
+#villa{
+	width: 1100px;
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+}
+#villaimagen{
+	width: 1100px;
+	height: 700px;
+	background-image: url('../images/entornos/villa.jpg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-size: cover;
+	clip-path: circle(150px at right);
+	transition: all 1s;
+	z-index: 2;
+}
+#textovilla{
+	color: white;
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	right: 90px;
+	top: 30px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(2,69,7,0.51) 100%);
+	opacity: 0;
+	transition: 1s all;
+	padding: 0px 10px;
+}
+#villaimagen:hover{
+	clip-path: circle(900px at center);
+	transition: all 1s;
+	z-index: 1;
+}
+#villaimagen:hover #textovilla{
+	transition: all 1s;
+	opacity: 1;
+	transition-delay: 1s;
+	right: 50px;
+}
+
+
+
+
+
+
+
+/*
+#rio{
+	width: 1100px;
+	height: 700px;
+	background-color: black;
+	position: relative;
+	overflow: hidden;
+}
+#rioimagen{
+	width: 1100px;
+	height: 700px;
+	background-color: blue;
+	position: relative;
+}
+#llanura{
+	width: 1100px;
+	height: 700px;
+	background-color: lightsteelblue;
+	position: relative;
+	overflow: hidden;
+}
+#llanuraimagen{
+	width: 1100px;
+	height: 700px;
+	background-color: blue;
+	position: relative;
+}
+#ciudad{
+	width: 1100px;
+	height: 700px;
+	background-color: mediumpurple;
+	position: relative;
+	overflow: hidden;
+}
+#ciudadimagen{
+	width: 1100px;
+	height: 700px;
+	background-color: blue;
+	position: relative;
+}
+#pantano{
+	width: 1100px;
+	height: 700px;
+	background-color: wheat;
+	position: relative;
+	overflow: hidden;
+}
+#pantanoimagen{
+	width: 1100px;
+	height: 700px;
+	background-color: blue;
+	position: relative;
+}
+#villa{
+	width: 1100px;
+	height: 700px;
+	background-color: indianred;
+	position: relative;
+	overflow: hidden;
+}
+#villaimagen{
+	width: 1100px;
+	height: 700px;
+	background-color: blue;
+	position: relative;
+}
+#cueva{
+	width: 1100px;
+	height: 700px;
+	background-color: lightskyblue;
+	position: relative;
+	overflow: hidden;
+}
+#cuevaimagen{
+	width: 1100px;
+	height: 700px;
+	background-color: blue;
+	position: relative;
+}
+.entorno{
+	margin: 0px auto;
+	
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fin elementos index */
+
+
+/* Inicio de galería. */
+
+#fondogaleria1{
+	width: 1100px;
+	min-height: 790px;
+	margin: 100px auto;
+	background-color: wheat;
+	position: relative;
+	text-align: center;
+	color: black;
+}
+#protagonistas{
+	width: 1000px;
+	height: 700px;
+	background: linear-gradient(to right, rgba(117,137,12,1) 0%, rgba(239,255,145,0.37) 63%, rgba(239,255,145,0) 100%);
+	border-radius: 70px 0px 70px 0px;
+	position: relative;
+	margin: 0px auto;
+	overflow: hidden;
+	box-shadow: 0px 1px 8px #C2CA4D;
+	color: wheat;
+	text-shadow: 0px 3px 7px black;
+}
+#fondogaleria1:hover{
+	text-shadow: 0px 3px 7px #DEE566;
+}
+.mini{
+	float: left;
+	margin-left: 20px;
+	margin-right: 10px;
+	display: block;
+	position: relative;
+	bottom: -525px;
+	border-radius: 40px 40px 0px 0px;
+	height: 200px;
+	transition: all 1s;
+	z-index: 1;
+}
+#telon{
+	width: 1000px;
+	height: 700px;
+	background-image: url('../images/telon2.jpg');
+	background-size: cover;
+	background-position: center;
+	transition: 1s all;
+	transition-delay: 1s;
+}
+.mini:hover ~ #telon{
+	filter: brightness(50%);
+	transition: 1s all;
+}
+.names{
+	background: linear-gradient(to bottom, rgba(36,182,222,1) 0%, rgba(190,236,247,0.81) 100%);
+}
+.radius{
+	border-radius: 40px 40px 0px 0px;
+}
+.mini:hover{
+	bottom: -498px;
+	box-shadow: 0px 5px 13px black;
+	transition: all .5s;
+}
+.big{
+	width: 300px;
+	position: absolute;
+	left: 0px;
+	border-radius: 55px 0px 0px 0px;
+	z-index: 1;
+
+}
+.desctext{
+	width: 550px;
+	height: 426px;
+	position: absolute;
+	right: 75px;
+	z-index: 1;
+}
+.textoImagen{
+	visibility: hidden;
+}
+.mini:hover + .textoImagen{
+	visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

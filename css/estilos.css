@@ -1,0 +1,354 @@
+/* Elementos index -*/
+a[title^="Hosted"]{display: none;}
+
+
+#paglogo{
+float: left;
+width: 307px;
+}
+#paglogo:hover{
+	filter: contrast(130%) brightness(120%);
+}
+a{
+	cursor: url('../images/cursor.png') ,default;
+}
+body{
+	background-image: url('../images/body_background.png');
+	font-family: 'Charm', cursive;
+	cursor: url('../images/cursor1.png') ,default;
+	background-attachment: fixed;
+
+}
+#grande{
+	width: 1100px;
+	min-height: 2000px;
+	margin: 0px auto;
+	background-color: green;	
+}
+#sep1{
+	margin-top: -100px;
+}
+ul{
+	list-style: none;
+	font-size: 30px;
+}
+ .nav,.nav ul{
+	 margin: 0px;
+	 padding: 0px;
+	font-family: ;
+	list-style: none;
+	line-height: 100px;
+}                      
+.nav > li{
+	float: right;
+}
+.nav li > ul{
+	display: none;
+}
+.nav li:hover > ul{
+display:block;
+}
+.nav li a{
+	display: block;
+	border-left: 1px solid wheat;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	background: #81050D;
+}
+.nav li a:hover{
+	background:#DF515A;
+	text-shadow: 0px 3px 7px black;
+}
+a{
+	text-decoration: none;
+	color: wheat;
+}
+#sep1{
+	margin-bottom: -25px;
+}
+.separador{
+	height: 30px;
+	width: 1100px;
+	background-color: wheat;
+	background-image: url('../images/separacion.png');
+	background-position: center;
+	background-size: cover;
+}
+header{
+	width: 1100px;
+	height: 100px;
+	background-color: indianred;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+}
+	/* AQUÍ EMPIEZA LA PRESENTACIÓN*/
+#fondo1{
+	width: 1100px;
+	min-height: 700px;
+	margin: 100px auto;
+	background-image: url('../images/background_castle.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+#fondo1:hover #presentacion{
+	text-shadow: 0px 3px 7px black;
+}
+#presentacion:first-letter{
+	font-size: 45px;
+	color: #81050D;
+}
+#presentacion{
+	width: 930px;
+	height: 630px;
+	background: linear-gradient(135deg, rgba(147,206,222,0) 21%, rgba(147,206,222,0.38) 51%, rgba(73,165,191,1) 100%);
+	position: relative;
+	left: 100px;
+	top: 50px;
+	z-index: 1;
+	color: white;
+	border-radius: 20px 0px 0px 40px;
+	text-align: center;
+}
+#descubre{
+	width: 500px;
+	height: 270px;
+	background: linear-gradient(to right, rgba(76,76,76,0.47) 0%, rgba(0,0,0,0.68) 40%, rgba(0,0,0,1) 100%);
+	position: relative;
+	left: 20px;
+	top: -15px;
+	border-radius: 40px 40px 0px 0px;
+}
+#discovery{
+	width: 500px;
+}
+#lucha{
+	width: 350px;
+	position: relative;
+	left: 560px;
+	top: -290px;
+	background: linear-gradient(to right, rgba(76,76,76,0.47) 0%, rgba(0,0,0,0.68) 40%, rgba(0,0,0,1) 100%);
+	border-radius: 40px 40px 0px 0px;
+}
+#fight{
+	width: 350px;
+}
+#conoce{
+	width: 500px;
+	height: 140px;
+	background-color: green;
+	margin-top: -540px;
+	margin-left: 20px;
+	background: linear-gradient(to right, rgba(76,76,76,0.47) 0%, rgba(0,0,0,0.68) 40%, rgba(0,0,0,1) 100%);
+}
+#meet{
+	width: 500px;
+	border-radius: 0px 0px 40px 40px;
+}
+	/* AQUÍ ACABA LA PRESENTACIÓN */
+
+
+	/* AQUÍ EMPIEZA EL CONTENIDO */
+#fondo2{
+	width: 1100px;
+	min-height: 700px;
+	background-color: lightcoral;
+	background-image: url('../images/fondo_2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#fondo2:hover #contenido{
+	text-shadow: 0px 3px 7px black;
+}
+#contenido{
+	width: 800px;
+	height: 520px;
+	background: linear-gradient(to right, rgba(92,4,4,1) 0%, rgba(207,0,0,0.21) 80%, rgba(207,0,0,0.01) 100%);
+	position: relative;
+	left: 200px;
+	top: 100px;
+	z-index: 1;
+	color: white;
+	border-radius: 10px 200px 0px 50px;
+	text-align: center;
+}
+	/* AQUÍ ACABA EL CONTENIDO */
+
+
+	/* AQUÍ EMPIEZA LA EMPRESA */
+#fondo3{
+	width: 1100px;
+	min-height: 700px;
+	background-color: mediumpurple;
+	background-image: url('../images/fondo1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+#fondo3:hover #empresa{
+	text-shadow: 0px 3px 7px black;
+}
+#empresa{
+	width: 800px;
+	height: 500px;
+	background: linear-gradient(to bottom, rgba(241,231,103,0.76) 0%, rgba(245,186,59,0.76) 39%, rgba(247,162,35,0.33) 60%, rgba(247,162,35,0.04) 74%);
+	position: relative;
+	left: 200px;
+	top: 100px;
+	z-index: 1;
+	color: white;
+	border-radius: 0px 150px 200px 0px;
+	padding: 20px;
+	overflow: auto;
+	font-size: 25px;
+}
+	/* AQUÍ ACABA LA EMPRESA */
+	
+	/* AQUÍ EMPIEZA EL CONTACTO */
+#fondo4{
+	width: 1100px;
+	min-height: 700px;
+	background-color: mediumpurple;
+	background-image: url('../images/fondo3.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+#fondo4:hover #contacto{
+	text-shadow: 0px 3px 7px black;
+}
+#contacto{
+	width: 800px;
+	height: 600px;
+	background: linear-gradient(to top, rgba(241,231,103,0.76) 0%, rgba(245,186,59,0.76) 39%, rgba(247,162,35,0.33) 60%, rgba(247,162,35,0.04) 74%);
+	position: relative;
+	left: 200px;
+	top: 30px;
+	z-index: 1;
+	color: white;
+	border-radius: 0px 30px 500px 0px;
+	padding: 20px;
+	overflow: auto;
+	font-size: 25px;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+}
+h2{
+	font-size: 30px;
+}
+
+footer{
+	margin-top: -20px;
+	width: 1100px;
+	height: 30px;
+	background-color: lightskyblue;
+	background: linear-gradient(to bottom, rgba(241,231,103,0.76) 0%, rgba(245,186,59,0.76) 39%, rgba(247,162,35,0.33) 60%, rgba(247,162,35,0.04) 74%);
+	text-align: center;
+}
+#arrow{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 80px;
+	height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fin elementos index */
+
+
+/* Inicio de galería. */
+
+#contenedor{
+	background: linear-gradient(135deg, rgba(73,165,191,0.88) 0%, rgba(76,167,192,0.88) 3%, rgba(104,182,204,0.45) 30%, rgba(117,189,209,0.24) 43%, rgba(117,189,209,0) 58%);	
+	margin: 30px auto;
+	width: 2000px;
+	height: 2000px;
+	position: relative;
+	border-radius: 200px 0px 2000px 0px;
+}
+#visualizar{
+	border-radius: 60px;
+	width: 1200px;
+	height: 1200px;
+	position: absolute;
+}
+.ver{
+	width: 827px;
+	height: 1169;
+	border-radius: 200px 0px 0px 0px;
+	margin-right: 100px;
+}
+#fotitos{
+	width: 2000px;
+	height: 283px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+#foto1{
+	float: left;
+	margin-right: 250px;
+	margin-left: 225px;
+	
+}
+.fotos:hover{
+	box-shadow: 0px 7px 15px grey;
+}
+#meet:hover{
+	box-shadow: 0px 7px 15px grey;
+}
+#foto2{
+	float: left;
+	margin-right: 250px;
+}
+#foto3{
+	float: left;
+	margin-right: 250px;
+}
+#foto4{
+	float: left;
+}
+.fotos{
+	border-radius: 40px 40px 0px 0px;
+}
+
+/* Fin de galería. */
+
+
+
+
+
+
+
+
+

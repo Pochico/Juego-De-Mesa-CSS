@@ -1,0 +1,250 @@
+/* Elementos index -*/
+a[title^="Hosted"]{display: none;}
+
+
+#paglogo{
+float: left;
+width: 307px;
+}
+#paglogo:hover{
+	filter: contrast(130%) brightness(120%);
+}
+a{
+	cursor: url('../images/cursor.png') ,default;
+}
+body{
+	background-image: url('../images/body_background.png');
+	font-family: 'Charm', cursive;
+	cursor: url('../images/cursor1.png') ,default;
+	background-attachment: fixed;
+
+}
+#grande{
+	width: 1100px;
+	min-height: 700px;
+	margin: 0px auto;
+	background-color: green;	
+}
+ul{
+	list-style: none;
+	font-size: 30px;
+}
+ .nav,.nav ul{
+	 margin: 0px;
+	 padding: 0px;
+	font-family: ;
+	list-style: none;
+	line-height: 100px;
+}                      
+.nav > li{
+	float: right;
+}
+.nav li > ul{
+	display: none;
+}
+.nav li:hover > ul{
+display:block;
+}
+.nav li a{
+	display: block;
+	border-left: 1px solid wheat;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	background: #81050D;
+}
+.nav li a:hover{
+	background:#DF515A;
+	text-shadow: 0px 3px 7px black;
+}
+a{
+	text-decoration: none;
+	color: wheat;
+}
+header{
+	width: 1100px;
+	height: 100px;
+	background-color: indianred;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+}
+h2{
+	font-size: 30px;
+}
+footer{
+	margin-top: -100px;
+	width: 1100px;
+	height: 30px;
+	background: linear-gradient(to bottom, rgba(241,231,103,0.76) 0%, rgba(245,186,59,0.76) 39%, rgba(247,162,35,0.33) 60%, rgba(247,162,35,0.04) 74%);
+	text-align: center;
+}
+#arrow{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 80px;
+	height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fin elementos index */
+
+
+/* Inicio de galería. */
+
+#fondogaleria1{
+	width: 1100px;
+	min-height: 790px;
+	margin: 100px auto;
+	background: linear-gradient(to bottom, rgba(255,227,117,0.95) 0%, rgba(255,227,117,0.87) 53%, rgba(255,255,255,0.8) 100%);
+	position: relative;
+	text-align: center;
+	color: black;
+	color: wheat;
+}
+#hostiles{
+	width: 1010px;
+	height: 700px;
+	background: linear-gradient(to bottom, rgba(87,8,8,1) 0%, rgba(143,3,3,0.83) 34%, rgba(219,7,7,0.5) 100%);
+	border-radius: 70px 150px 0px 0px;
+	background-size: cover;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	overflow: hidden;
+	box-shadow: 0px -3px 8px white;
+	color: white;
+	text-shadow: #B30A0A;
+}
+#fondogaleria1:hover{
+	text-shadow: 0px 3px 7px #B30A0A;
+}
+#flechita{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: absolute;
+	background-image: url('../images/flecharriba.png');
+	background-size: cover;
+	left: 480px;
+	top: 640px;
+	z-index: 2;
+	transition: 1s all;
+	animation-name: bote;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+#starter{
+	z-index: 3;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 5px;
+	left: 420px;
+}
+#starter:hover + #flechita{
+	transition: 1s all;
+	margin-top: -620px;
+	animation-play-state: paused;
+	transform: rotatex(180deg);
+}
+#starter:hover ~ #lahistoria{
+	transition: 2s all;
+	clip-path: circle(500px at top);
+	transition-delay: .2s;
+}
+#starter:hover ~ #telon{
+	transition: 2s all;
+	filter: blur(5px) saturate(40%);
+	transition-delay: .5s;
+}
+#lahistoria{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 225px;
+	top: 100px;
+	z-index: 1;
+	background: linear-gradient(to bottom, rgba(46,0,11,0.79) 0%, rgba(140,2,33,0.59) 66%, rgba(143,2,34,0.56) 68%, rgba(169,3,41,0) 100%);
+	clip-path: circle(1px at bottom);
+	border-radius: 20px 20px 0px 0px;
+	transition: 1s;
+	overflow: auto;
+	padding: 0px 15px;
+}
+@keyframes bote{
+	0%{
+		left: 450px;
+		top: 645px;
+	}
+	35%{
+		left: 450px;
+		top: 625px;
+	}
+	70%{
+		left: 450px;
+		top: 645px;
+	}
+	100%{
+		left: 450px;
+		top: 645px;
+	}
+}
+#telon{
+	width: 1010px;
+	height: 700px;
+	background-image: url('../images/background_historia.jpg');
+	background-size: cover;
+	background-position: center;
+	transition: 1s all;
+	transition-delay: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
